@@ -1,0 +1,89 @@
+html, body {
+  background-color: #f0f0f0; /* Light gray background */
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.head {
+  color: #333; /* Dark gray text */
+}
+
+.calculator {
+  border: 1px solid #999; /* Light gray border */
+  background-color: #333; /* Dark background color */
+  height: fit-content;
+  width: 450px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.ac {
+  grid-column: span 2;
+}
+
+.equal {
+  grid-column: span 2;
+}
+
+.result {
+  text-align: right;
+  grid-column: span 4;
+  background-color: #222; /* Dark background color */
+  height: 50px;
+  padding: 10px;
+  padding-right: 30px;
+  font-size: 20px;
+  color: white; /* White text */
+}
+
+.result-val {
+  font-size: 30px;
+  position: relative;
+  z-index: 10;
+  color: white; /* White text */
+}
+
+.btn {
+  height: 90px;
+  font-size: 1.5em;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #444; /* Dark gray button */
+  transition: background-color 0.3s ease;
+  color: #fff; /* White text */
+}
+
+.btn2 {
+  background-color: #777; /* Gray button */
+  border-radius: 0px;
+  border: 1px solid;
+  color: white; /* White text */
+}
+
+.equal,
+.ac {
+  background-color: #ff8c00; /* Orange button */
+}
+
+.division,
+.multiply,
+.add,
+.subtraction,
+.dot {
+  background-color: #555; 
+  color: white; 
+}
+
+.delete {
+  background-color: #333; 
+  color: white; 
+}
